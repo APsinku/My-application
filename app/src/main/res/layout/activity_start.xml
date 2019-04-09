@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="abhi.osmchat.StartActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="27dp"
+        android:text="Welcome to AP Chat"
+        android:textAlignment="center"
+        android:background="#ff531e"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/phoneLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="110dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:id="@+id/phooneicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.19"
+
+            android:padding="10dp"
+            app:srcCompat="@drawable/phoneicon" />
+
+        <EditText
+            android:id="@+id/PhonEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.82"
+            android:background="@drawable/bgstart"
+            android:ems="10"
+            android:hint="+91 Phone Number"
+            android:inputType="phone"
+            android:text="+91" />
+
+        <ProgressBar
+            android:id="@+id/phoneProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/codeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/phoneLayout"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:id="@+id/lockicon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.19"
+            android:padding="10dp"
+            app:srcCompat="@drawable/lockicon" />
+
+        <EditText
+            android:id="@+id/codeEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.82"
+            android:background="@drawable/bgstart"
+            android:ems="10"
+
+            android:hint="Verification Code"
+            android:inputType="number" />
+
+        <ProgressBar
+            android:id="@+id/codeProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+
+            />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/NameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:id="@+id/nameIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.19"
+
+            android:padding="10dp"
+            app:srcCompat="@drawable/pep" />
+
+        <EditText
+            android:id="@+id/NameText"
+            android:layout_width="268dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.82"
+            android:background="@drawable/bgstart"
+            android:ems="10"
+
+            android:hint="Name"
+            android:inputType="textPersonName" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="33dp"
+        android:textAlignment="center"
+        android:text="A verification Code will be sent to your Phone \n Number "
+        android:layout_above="@+id/sendbtn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/sendbtn"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:text="Send Verification"
+        android:background="#082041"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/codeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="There was some error"
+        android:textColor="#ff531e"
+        android:visibility="invisible" />
+
+</RelativeLayout>

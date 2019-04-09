@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#082041</color>
+    <color name="colorPrimaryDark">#061a36</color>
+    <color name="colorAccent">#f94b16</color>
+    <color name="darkColor">#222222</color>
+
+
+
+    <color name="Tcolor1">#F44336</color>
+    <color name="TcolorGreen">#13a351</color>
+    <color name="Tcolor2">#072551</color>
+    <color name="Tcolor3">#ffffff</color>
+
+</resources>

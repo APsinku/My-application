@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="6dp">
+
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/message_profile_layout"
+        android:layout_width="29dp"
+        android:layout_height="29dp"
+        android:src="@drawable/default_avatar" />
+
+    <LinearLayout
+        android:id="@+id/contentWithBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/bubble_in"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/txtMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:maxWidth="239dp"/>
+
+        <ImageView
+            android:id="@+id/message_image_layout"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/contentWithBackground"
+            android:layout_height="wrap_content">
+        </ImageView>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

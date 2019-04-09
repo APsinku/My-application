@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "38419701341",
+    "firebase_url": "https://osmchat.firebaseio.com",
+    "project_id": "osmchat",
+    "storage_bucket": "osmchat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38419701341:android:edaa90317d9f73f8",
+        "android_client_info": {
+          "package_name": "abhi.osmchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "38419701341-2d4v6alb8omnbk6ima9t6817tbf0h40v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "abhi.osmchat",
+            "certificate_hash": "9d8d86776a2353baabf9f99226dba59eff6451a4"
+          }
+        },
+        {
+          "client_id": "38419701341-592otc1kk6nfh04rm8tudnqi3or2lh29.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDloqCksGXvP8DE2a_HEAUOTvOzb0M_E8c"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "38419701341-592otc1kk6nfh04rm8tudnqi3or2lh29.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
